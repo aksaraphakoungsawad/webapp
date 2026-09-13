@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แปลงความยาวของสตริงที่กำหนดเป็นไบต์</title>
+</head>
+<body>
+    <h2>หน้าจอแสดงการแปลงความยาวของสตริง</h2>
+    <script>
+        const byte_Size = str => new Blob([str]).size;
+        console.log(byte_Size('hello computer science'));
+        console.log(byte_Size('สวัสดีจ้า'));
+    </script>
+</body>
+</html>

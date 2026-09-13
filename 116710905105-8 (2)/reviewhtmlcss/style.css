@@ -1,0 +1,14 @@
+h3 {
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+table,th,td {
+    border-color: #96d4d4;
+    border : 1px solid;
+    border-collapse: collapse;
+
+}
+tr, td{
+    height: 18px;
+width: 100px;
+}

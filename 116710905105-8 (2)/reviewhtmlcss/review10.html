@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySQL PHP SQL Toggle</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 40px; }
+        .container { position: relative; width: 350px; height: 250px; }
+
+        .box {
+            position: absolute;
+            font-weight: bold;
+            font-size: 28px;
+            padding: 10px 20px;
+            border: 4px solid;
+            cursor: pointer;
+        }
+
+        .mysql { border-color: red; color: blue; top: 10px; left: 10px; }
+        .php { border-color: blue; color: red; font-size: 32px; padding: 15px 30px; border-radius: 50%; top: 70px; left: 100px; }
+        .sql { border-color: #87CEEB; color: red; top: 160px; left: 200px; cursor: default; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box mysql" onclick="show('php-box')">MySQL</div>
+        <div id="php-box" class="box php hidden" onclick="show('sql-box')">PHP</div>
+        <div id="sql-box" class="box sql hidden">SQL</div>
+    </div>
+
+    <script>
+        const show = id => document.getElementById(id).classList.remove('hidden');
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action = "" name ="addressform">
+        Name : <input type="text" name="yourname"><br>
+        phone : <input type="text" name="phone"><br>
+        email : <input type="text" name="email"><br>
+        <input type="button" value="แสดงข้อมูล" onclick="showData()">
+    </form>
+    <script>
+    function showData() {
+     const name = document.addressform.yourname.value;
+     const phone = document.addressform.phone.value;
+     const email = document.addressform.email.value;
+     console.log("ชื่อ:", name);
+     console.log("เบอร์โทรศัพท์:", phone);
+     console.log("อีเมล:", email);
+     alert(`ข้อมูลที่ป้อน:\nชื่อ: ${name}\nเบอร์โทรศัพท์: ${phone}\nอีเมล: ${email}`);
+    }
+    </script>
+</body>
+</html>

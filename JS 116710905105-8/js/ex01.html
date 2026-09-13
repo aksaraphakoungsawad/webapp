@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Comparison</title>
+</head>
+<body>
+    <script>
+        const matches = (obj, source) => Object.keys(source).every(key => obj.hasOwnProperty(key) && obj[key] === source[key]);
+
+        console.log(matches({ age: 30, hair: 'long', beard: true },  { hair: 'short', beard: true })); //false
+        console.log(matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true } )); //true
+        console.log(matches({ age: 30, hair: 'short', beard: true },  { hair: 'long', beard: true })); //false
+    </script>
+</body>
+</html>

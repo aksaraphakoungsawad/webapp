@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Image Example</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+        }
+
+        .border-box {
+            width: 500px;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 20px;
+            
+            border: 20px solid transparent; 
+
+            border-image-source: url("กรอบไม้.png"); 
+            border-image-slice: 30;                 
+            border-image-repeat: round;             
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="border-box">
+        This is an example of how to use css border image
+    </div>
+
+</body>
+</html>

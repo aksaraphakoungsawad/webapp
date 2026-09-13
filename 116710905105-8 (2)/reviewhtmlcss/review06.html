@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview Example</title>
+    <style>
+        body { font-family: Georgia, serif; padding: 20px; }
+        h3 { font-size: 18px; margin-bottom: 10px; }
+
+        .card {
+            position: relative;
+            display: inline-block;
+            width: 280px;
+        }
+
+        .card img { width: 100%; display: block; }
+
+        .overlay {
+            position: absolute;
+            inset: 50% 0 auto 0;
+            transform: translateY(-50%);
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            background: linear-gradient(rgba(128,0,128,0.4), rgba(128,0,128,0.85), rgba(128,0,128,0.4));
+            backdrop-filter: blur(4px);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Preview:</h3>
+    <div class="card">
+        <img src="ดอกไม้.png" alt="Flower">
+        <div class="overlay">Hello, World</div>
+    </div>
+
+</body>
+</html>
