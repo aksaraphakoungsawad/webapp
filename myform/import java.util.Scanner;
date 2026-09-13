@@ -1,0 +1,22 @@
+import java.util.Scanner;
+    public class TestInput (
+        public static void main(String(] args) (
+        Scanner sc = new Scanner(System.in) :
+
+        String name;
+        String
+        byte age:
+float height;
+float weight;
+System.out.println("Input Name");
+name = sc.next () ;
+System.out.println("Input Surname");
+surname = sc.next ();
+System.out.println("Input age");
+age = sc.nextByte();
+        System.out.println("Input height");
+height = sc.nextFloat ();
+System.out.println("Input weight");
+weight = sc.nexFloat ();
+System.out.print ("Name ="+name);
+System.out.print("Name ="+surname);
